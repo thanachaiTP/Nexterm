@@ -1,0 +1,15 @@
+services:
+  nexterm:
+    build: .
+    image: nexterm/server-ssh
+#    image: germannewsmaker/nexterm:1.0.1-OPEN-PREVIEW
+    container_name: nexterm
+    restart: always
+    environment:
+      - TZ=Asia/Bangkok
+    ports:
+      - "6989:6989"
+    volumes:
+      - nexterm:/app/data
+volumes:
+  nexterm:

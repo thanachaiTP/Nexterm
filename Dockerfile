@@ -11,7 +11,7 @@ RUN npm run build
 FROM node:18-alpine
 
 RUN apk add --no-cache \
-    cairo-dev jpeg-dev libpng-dev ossp-uuid-dev ffmpeg-dev \
+    cairo-dev jpeg-dev libpng-dev ossp-uuid-dev ffmpeg-dev tzdata \
     pango-dev libvncserver-dev libwebp-dev openssl-dev freerdp-dev freerdp \
     autoconf automake libtool libpulse libogg libc-dev \
     python3 py3-pip py3-setuptools make gcc g++ \
