@@ -23,6 +23,11 @@ The open source server management software for SSH, VNC & RDP
 
 You can run a preview of Nexterm by clicking [here](https://docs.nexterm.dev/preview).
 
+## Run
+```
+docker compose up -d --build
+```
+
 ## License
 
 Distributed under the MIT license. See `LICENSE` for more information.
